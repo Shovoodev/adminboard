@@ -65,7 +65,7 @@ const SingleUserPage = () => {
                 <HoverCardTrigger>
                   <Shield
                     size={36}
-                    className="rounded-full bg-green-800/30 border-1 border-green-800/50 p-2"
+                    className="rounded-full bg-green-800/30 border-green-800/50 p-2"
                   />
                 </HoverCardTrigger>
                 <HoverCardContent>
@@ -80,7 +80,7 @@ const SingleUserPage = () => {
                 <HoverCardTrigger>
                   <Candy
                     size={36}
-                    className="rounded-full bg-yellow-500/30 border-1 border-yellow-500/50 p-2"
+                    className="rounded-full bg-yellow-500/30 border-yellow-500/50 p-2"
                   />
                 </HoverCardTrigger>
                 <HoverCardContent>
@@ -94,7 +94,7 @@ const SingleUserPage = () => {
                 <HoverCardTrigger>
                   <Citrus
                     size={36}
-                    className="rounded-full bg-orange-500/30 border-1 border-orange-500/50 p-2"
+                    className="rounded-full bg-orange-500/30 border-orange-500/50 p-2"
                   />
                 </HoverCardTrigger>
                 <HoverCardContent>
@@ -161,6 +161,7 @@ const SingleUserPage = () => {
             <div className="flex items-center gap-2">
               <Avatar className="size-12">
                 <AvatarFallback>JD</AvatarFallback>
+                <AvatarImage src={""} />
               </Avatar>
               <h1 className="text-xl font-semibold">John Doe</h1>
             </div>

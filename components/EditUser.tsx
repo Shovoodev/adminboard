@@ -128,6 +128,7 @@ const EditUser = () => {
                   <FormItem>
                     <FormLabel>Role</FormLabel>
                     <FormControl>
+                      <Input {...field} />
                       <Select>
                         <SelectTrigger>
                           <SelectValue placeholder="Role" />

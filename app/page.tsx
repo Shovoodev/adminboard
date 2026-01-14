@@ -2,30 +2,51 @@ import AppAreaChart from "@/components/AppAreaChart";
 import AppBarChart from "@/components/AppBarChart";
 import AppPieChart from "@/components/AppPieChart";
 import CardList from "@/components/CardList";
+import DashboardCard from "@/components/DashboardCard";
 import TodoList from "@/components/TodoList";
 
 export default function Homepage() {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-4 gap-4">
-      <div className=" bg-primary-foreground p-4 rounded-lg lg:col-span-2 xl:col-span-1 2xl:col-span-2">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 2xl:grid-cols-6 gap-4">
+      {/* Main Bar Chart */}
+      <DashboardCard className="lg:col-span-2 2xl:col-span-3">
         <AppBarChart />
-      </div>
-      <div className=" bg-primary-foreground p-4 rounded-lg ">
-        <CardList title="Latest Transactions" />
-      </div>
-      <div className=" bg-primary-foreground p-4 rounded-lg ">
-        <AppPieChart />{" "}
-      </div>
-      <div className=" bg-primary-foreground p-4 rounded-lg ">
+      </DashboardCard>
+
+      {/* Pie Charts */}
+      <DashboardCard>
+        <AppPieChart />
+      </DashboardCard>
+
+      <DashboardCard>
+        <AppPieChart />
+      </DashboardCard>
+
+      <DashboardCard>
+        <AppPieChart />
+      </DashboardCard>
+
+      <DashboardCard>
+        <AppPieChart />
+      </DashboardCard>
+
+      {/* Popular Content */}
+      <DashboardCard className="lg:col-span-2 2xl:col-span-2">
         <CardList title="Popular Content" />
-      </div>
-      <div className=" bg-primary-foreground p-4 rounded-lg lg:col-span-2 xl:col-span-1 2xl:col-span-2">
+      </DashboardCard>
+
+      {/* Area Chart */}
+      <DashboardCard className="lg:col-span-2 2xl:col-span-3">
         <AppAreaChart />
-      </div>
-      <div className=" bg-primary-foreground p-4 rounded-lg ">
-        <TodoList />{" "}
-      </div>
-      <div className=" bg-primary-foreground p-4 rounded-lg "> test </div>
+      </DashboardCard>
+
+      {/* Todo */}
+      <DashboardCard>
+        <TodoList />
+      </DashboardCard>
+
+      {/* Placeholder */}
+      <DashboardCard>test</DashboardCard>
     </div>
   );
 }
